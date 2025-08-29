@@ -1,0 +1,47 @@
+# Core Framework
+gradio==4.19.2
+crewai==0.28.8
+crewai-tools==0.2.6
+
+# Speech Processing
+faster-whisper==1.0.1
+piper-tts==1.2.0
+silero-vad==0.4.0
+pyaudio==0.2.14
+sounddevice==0.4.6
+librosa==0.10.1
+webrtcvad==2.0.10
+
+# Vision Processing
+opencv-python==4.9.0.80
+pytesseract==0.3.10
+ultralytics==8.1.27
+pillow==10.2.0
+
+# LLM Integration
+ollama==0.1.7
+langchain==0.1.11
+langchain-community==0.0.27
+
+# Audio/Video Utilities
+numpy==1.24.3
+scipy==1.11.4
+matplotlib==3.8.2
+
+# Session Management
+python-deque==1.0.0
+python-dotenv==1.0.0
+
+# Async & Performance
+asyncio==3.4.3
+aiofiles==23.2.1
+threading-utils==0.2.0
+
+# Safety & Content Moderation
+better-profanity==0.7.0
+pyenchant==3.2.2
+
+# Development & Testing
+pytest==8.0.0
+pytest-asyncio==0.23.5
+loguru==0.7.2

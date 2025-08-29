@@ -1,0 +1,295 @@
+{
+  "letters": {
+    "A": {
+      "name": "A",
+      "phoneme": "/eɪ/",
+      "sound_description": "ay as in day",
+      "example_words": ["Apple", "Ant", "Airplane"],
+      "mapped_object": "Apple",
+      "activities": ["repeat-after-me", "find-an-object", "show-the-letter"],
+      "common_confusions": [],
+      "difficulty": 1
+    },
+    "B": {
+      "name": "B",
+      "phoneme": "/biː/",
+      "sound_description": "bee",
+      "example_words": ["Ball", "Bear", "Book"],
+      "mapped_object": "Ball",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["P"],
+      "difficulty": 2
+    },
+    "C": {
+      "name": "C",
+      "phoneme": "/siː/",
+      "sound_description": "see",
+      "example_words": ["Cat", "Car", "Cake"],
+      "mapped_object": "Cat",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["K", "S"],
+      "difficulty": 2
+    },
+    "D": {
+      "name": "D",
+      "phoneme": "/diː/",
+      "sound_description": "dee",
+      "example_words": ["Dog", "Duck", "Door"],
+      "mapped_object": "Dog",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["T"],
+      "difficulty": 2
+    },
+    "E": {
+      "name": "E",
+      "phoneme": "/iː/",
+      "sound_description": "ee as in see",
+      "example_words": ["Elephant", "Egg", "Eagle"],
+      "mapped_object": "Elephant",
+      "activities": ["repeat-after-me", "find-an-object", "show-the-letter"],
+      "common_confusions": ["I"],
+      "difficulty": 1
+    },
+    "F": {
+      "name": "F",
+      "phoneme": "/ɛf/",
+      "sound_description": "eff",
+      "example_words": ["Fish", "Flower", "Frog"],
+      "mapped_object": "Fish",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["V"],
+      "difficulty": 2
+    },
+    "G": {
+      "name": "G",
+      "phoneme": "/dʒiː/",
+      "sound_description": "jee",
+      "example_words": ["Grapes", "Giraffe", "Garden"],
+      "mapped_object": "Grapes",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["J"],
+      "difficulty": 3
+    },
+    "H": {
+      "name": "H",
+      "phoneme": "/eɪtʃ/",
+      "sound_description": "aych",
+      "example_words": ["Hat", "House", "Horse"],
+      "mapped_object": "Hat",
+      "activities": ["repeat-after-me", "find-an-object", "choose-the-sound"],
+      "common_confusions": [],
+      "difficulty": 1
+    },
+    "I": {
+      "name": "I",
+      "phoneme": "/aɪ/",
+      "sound_description": "eye",
+      "example_words": ["Ice cream", "Igloo", "Island"],
+      "mapped_object": "Ice cream",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["E"],
+      "difficulty": 1
+    },
+    "J": {
+      "name": "J",
+      "phoneme": "/dʒeɪ/",
+      "sound_description": "jay",
+      "example_words": ["Jacket", "Jelly", "Jump"],
+      "mapped_object": "Jacket",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["G"],
+      "difficulty": 3
+    },
+    "K": {
+      "name": "K",
+      "phoneme": "/keɪ/",
+      "sound_description": "kay",
+      "example_words": ["Kite", "Key", "Kangaroo"],
+      "mapped_object": "Kite",
+      "activities": ["repeat-after-me", "find-an-object", "show-the-letter"],
+      "common_confusions": ["C"],
+      "difficulty": 2
+    },
+    "L": {
+      "name": "L",
+      "phoneme": "/ɛl/",
+      "sound_description": "el",
+      "example_words": ["Lion", "Lemon", "Ladder"],
+      "mapped_object": "Lion",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["R"],
+      "difficulty": 2
+    },
+    "M": {
+      "name": "M",
+      "phoneme": "/ɛm/",
+      "sound_description": "em",
+      "example_words": ["Mouse", "Moon", "Monkey"],
+      "mapped_object": "Mouse",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["N"],
+      "difficulty": 1
+    },
+    "N": {
+      "name": "N",
+      "phoneme": "/ɛn/",
+      "sound_description": "en",
+      "example_words": ["Nest", "Nose", "Night"],
+      "mapped_object": "Nest",
+      "activities": ["repeat-after-me", "find-an-object", "choose-the-sound"],
+      "common_confusions": ["M"],
+      "difficulty": 1
+    },
+    "O": {
+      "name": "O",
+      "phoneme": "/oʊ/",
+      "sound_description": "oh",
+      "example_words": ["Orange", "Octopus", "Owl"],
+      "mapped_object": "Orange",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": [],
+      "difficulty": 1
+    },
+    "P": {
+      "name": "P",
+      "phoneme": "/piː/",
+      "sound_description": "pee",
+      "example_words": ["Penguin", "Pizza", "Pencil"],
+      "mapped_object": "Penguin",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["B"],
+      "difficulty": 2
+    },
+    "Q": {
+      "name": "Q",
+      "phoneme": "/kjuː/",
+      "sound_description": "cue",
+      "example_words": ["Queen", "Question", "Quilt"],
+      "mapped_object": "Queen",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": [],
+      "difficulty": 3
+    },
+    "R": {
+      "name": "R",
+      "phoneme": "/ɑːr/",
+      "sound_description": "ar",
+      "example_words": ["Robot", "Rainbow", "Rabbit"],
+      "mapped_object": "Robot",
+      "activities": ["repeat-after-me", "find-an-object", "choose-the-sound"],
+      "common_confusions": ["L", "W"],
+      "difficulty": 3
+    },
+    "S": {
+      "name": "S",
+      "phoneme": "/ɛs/",
+      "sound_description": "ess",
+      "example_words": ["Sun", "Star", "Snake"],
+      "mapped_object": "Sun",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["C", "Z"],
+      "difficulty": 2
+    },
+    "T": {
+      "name": "T",
+      "phoneme": "/tiː/",
+      "sound_description": "tee",
+      "example_words": ["Tree", "Train", "Tiger"],
+      "mapped_object": "Tree",
+      "activities": ["repeat-after-me", "choose-the-sound", "find-an-object"],
+      "common_confusions": ["D"],
+      "difficulty": 2
+    },
+    "U": {
+      "name": "U",
+      "phoneme": "/juː/",
+      "sound_description": "you",
+      "example_words": ["Umbrella", "Unicorn", "Under"],
+      "mapped_object": "Umbrella",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": [],
+      "difficulty": 1
+    },
+    "V": {
+      "name": "V",
+      "phoneme": "/viː/",
+      "sound_description": "vee",
+      "example_words": ["Violin", "Van", "Volcano"],
+      "mapped_object": "Van",
+      "activities": ["repeat-after-me", "find-an-object", "choose-the-sound"],
+      "common_confusions": ["F"],
+      "difficulty": 2
+    },
+    "W": {
+      "name": "W",
+      "phoneme": "/ˈdʌbəl.juː/",
+      "sound_description": "double-you",
+      "example_words": ["Water", "Window", "Whale"],
+      "mapped_object": "Window",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["R"],
+      "difficulty": 3
+    },
+    "X": {
+      "name": "X",
+      "phoneme": "/ɛks/",
+      "sound_description": "eks",
+      "example_words": ["X-ray", "Xylophone", "Box"],
+      "mapped_object": "X-ray",
+      "activities": ["repeat-after-me", "choose-the-sound", "show-the-letter"],
+      "common_confusions": [],
+      "difficulty": 3
+    },
+    "Y": {
+      "name": "Y",
+      "phoneme": "/waɪ/",
+      "sound_description": "why",
+      "example_words": ["Yellow", "Yacht", "Yo-yo"],
+      "mapped_object": "Yo-yo",
+      "activities": ["repeat-after-me", "find-an-object", "show-the-letter"],
+      "common_confusions": ["I"],
+      "difficulty": 2
+    },
+    "Z": {
+      "name": "Z",
+      "phoneme": "/ziː/",
+      "sound_description": "zee",
+      "example_words": ["Zebra", "Zoo", "Zipper"],
+      "mapped_object": "Zebra",
+      "activities": ["repeat-after-me", "show-the-letter", "find-an-object"],
+      "common_confusions": ["S"],
+      "difficulty": 2
+    }
+  },
+  "progression_rules": {
+    "easy_letters": ["A", "E", "H", "I", "M", "N", "O", "U"],
+    "medium_letters": ["B", "C", "D", "F", "K", "L", "P", "S", "T", "V", "Y", "Z"],
+    "hard_letters": ["G", "J", "Q", "R", "W", "X"],
+    "confusion_pairs": [
+      ["B", "P"],
+      ["D", "T"],
+      ["C", "K"],
+      ["F", "V"],
+      ["G", "J"],
+      ["M", "N"],
+      ["L", "R"],
+      ["S", "Z"]
+    ]
+  },
+  "age_adaptations": {
+    "3-5": {
+      "speech_rate": 0.8,
+      "confidence_threshold": 0.6,
+      "max_retries": 3,
+      "simplified_vocabulary": true,
+      "visual_emphasis": true
+    },
+    "6-8": {
+      "speech_rate": 1.0,
+      "confidence_threshold": 0.7,
+      "max_retries": 2,
+      "simplified_vocabulary": false,
+      "visual_emphasis": false
+    }
+  }
+}
