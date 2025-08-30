@@ -438,9 +438,21 @@ def create_interface():
 
 if __name__ == "__main__":
     interface = create_interface()
-    interface.launch(
-        server_name="0.0.0.0",
-        server_port=7860,
-        share=False,
-        show_api=False
-    )
+    try:
+        interface.launch(
+            server_name="0.0.0.0",
+            server_port=7860,
+            share=False,
+            show_api=False,
+            inbrowser=False,
+            prevent_thread_lock=False
+        )
+    except ValueError:
+        # Fallback if localhost not accessible
+        interface.launch(
+            server_name="127.0.0.1",
+            server_port=7860,
+            share=False,
+            show_api=False,
+            inbrowser=False
+        )
