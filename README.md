@@ -27,10 +27,15 @@ git clone https://github.com/Nouran99/bubbly---KidSafe-Alphabet-Tutor.git
 cd bubbly---KidSafe-Alphabet-Tutor
 
 # Install minimal requirements
-pip install gradio numpy loguru
+pip install -r requirements-minimal.txt
+# Or manually: pip install gradio numpy loguru python-dotenv
 
-# Run the demo
-python app/gradio_ui_simple.py
+# Test the setup (optional but recommended)
+python test_setup.py
+
+# Run the application
+python start_app.py
+# Or directly: python app/gradio_ui_simple.py
 ```
 Open http://localhost:7860 in your browser
 

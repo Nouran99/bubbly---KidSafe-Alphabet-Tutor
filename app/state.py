@@ -224,20 +224,20 @@ class SessionMemory:
         
     def suggest_next_letter(self) -> str:
         """Suggest next letter based on current progress"""
-        # Load curriculum for progression rules
+        # Simple progression through alphabet
         try:
-            with open('app/curriculum.json', 'r') as f:
-                curriculum = json.load(f)
-                
-            progression = curriculum['progression_rules']
+            # Define letter pools by difficulty
+            easy_letters = ['A', 'E', 'I', 'O', 'U']  # Vowels
+            medium_letters = ['B', 'C', 'D', 'F', 'G', 'H', 'L', 'M', 'N', 'P', 'R', 'S', 'T']
+            hard_letters = ['J', 'K', 'Q', 'V', 'W', 'X', 'Y', 'Z']
             
             # Get appropriate difficulty letters
             if self.derived_state.difficulty_level == DifficultyLevel.EASY:
-                letter_pool = progression['easy_letters']
+                letter_pool = easy_letters
             elif self.derived_state.difficulty_level == DifficultyLevel.MEDIUM:
-                letter_pool = progression['medium_letters']
+                letter_pool = medium_letters
             else:
-                letter_pool = progression['hard_letters']
+                letter_pool = hard_letters
                 
             # Filter out completed letters
             available = [l for l in letter_pool 
