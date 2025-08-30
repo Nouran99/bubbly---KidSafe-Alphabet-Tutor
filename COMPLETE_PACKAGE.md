@@ -210,7 +210,6 @@ Then open: http://localhost:7860
 ---
 
 **Project developed by**: Nouran Darwish
-**For**: CNTXT.AI Hiring Process
 **Status**: ✅ COMPLETE & READY
 
 ---
