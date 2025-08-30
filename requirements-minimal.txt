@@ -1,0 +1,6 @@
+# Minimal Requirements for KidSafe Alphabet Tutor
+# This is the absolute minimum to run the basic demo
+
+gradio>=4.19.2,<5.0.0
+numpy>=1.24.0
+loguru>=0.7.0,<1.0.0

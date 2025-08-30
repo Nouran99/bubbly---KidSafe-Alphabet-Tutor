@@ -1,0 +1,49 @@
+# Full Requirements for KidSafe Alphabet Tutor
+# Includes all AI features (speech, vision, LLM)
+
+# Core
+gradio>=4.19.2,<5.0.0
+numpy>=1.24.0
+loguru>=0.7.0,<1.0.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# Image Processing
+Pillow>=10.0.0,<11.0.0
+
+# Computer Vision
+opencv-python>=4.9.0.80
+pytesseract>=0.3.10
+
+# Object Detection (lightweight)
+# Note: ultralytics can be heavy, using CPU-only version
+ultralytics>=8.1.0,<9.0.0
+
+# Speech Recognition
+# Note: Using simpler alternatives to faster-whisper
+sounddevice>=0.4.6
+scipy>=1.11.0,<2.0.0
+webrtcvad>=2.0.10
+
+# Audio Processing
+librosa>=0.10.0,<0.11.0
+
+# Content Moderation
+better-profanity>=0.7.0
+
+# Async Support
+aiofiles>=23.2.0
+
+# LLM Support (optional, requires Ollama server)
+ollama>=0.1.7
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# Note: For production deployment with all AI features:
+# 1. Install system dependencies first:
+#    - tesseract-ocr (for OCR)
+#    - ffmpeg (for audio)
+# 2. Consider using Docker for consistent environment

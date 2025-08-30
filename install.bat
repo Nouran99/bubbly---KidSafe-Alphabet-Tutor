@@ -59,25 +59,34 @@ set /p CHOICE="Enter choice [1-3]: "
 
 if "%CHOICE%"=="1" (
     echo Installing minimal dependencies...
-    pip install --quiet gradio numpy loguru python-dotenv
+    if exist requirements-minimal.txt (
+        pip install --quiet -r requirements-minimal.txt
+    ) else (
+        pip install --quiet gradio numpy loguru
+    )
     echo [OK] Minimal dependencies installed
     set INSTALL_TYPE=quick
 ) else if "%CHOICE%"=="2" (
     echo Installing standard dependencies...
-    if exist requirements.txt (
+    if exist requirements-standard.txt (
+        pip install --quiet -r requirements-standard.txt
+    ) else if exist requirements.txt (
         pip install --quiet -r requirements.txt
     ) else (
-        pip install --quiet gradio==4.19.2 numpy==1.24.3 loguru==0.7.2 python-dotenv==1.0.0 pillow==10.2.0 opencv-python==4.9.0.80 pytesseract==0.3.10
+        pip install --quiet gradio==4.19.2 numpy==1.24.3 loguru==0.7.2 python-dotenv==1.0.0 pillow==10.2.0
     )
     echo [OK] Standard dependencies installed
     set INSTALL_TYPE=standard
 ) else if "%CHOICE%"=="3" (
     echo Installing complete dependencies...
-    if exist requirements.txt (
+    if exist requirements-full.txt (
+        pip install --quiet -r requirements-full.txt
+    ) else if exist requirements.txt (
         pip install --quiet -r requirements.txt
     )
     echo Installing AI packages (this may take a while)...
-    pip install --quiet faster-whisper ultralytics torch torchvision torchaudio
+    REM Optional: Uncomment to install PyTorch CPU version
+    REM pip install --quiet torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
     echo [OK] All dependencies installed
     
     set /p DOWNLOAD_MODELS="Download AI models now? (y/n): "

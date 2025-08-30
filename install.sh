@@ -106,13 +106,19 @@ echo ""
 case $REPLY in
     1)
         print_info "Installing minimal dependencies..."
-        pip install --quiet gradio numpy loguru python-dotenv
+        if [ -f "requirements-minimal.txt" ]; then
+            pip install --quiet -r requirements-minimal.txt
+        else
+            pip install --quiet gradio numpy loguru
+        fi
         print_success "Minimal dependencies installed"
         INSTALL_TYPE="quick"
         ;;
     2)
         print_info "Installing standard dependencies..."
-        if [ -f "requirements.txt" ]; then
+        if [ -f "requirements-standard.txt" ]; then
+            pip install --quiet -r requirements-standard.txt
+        elif [ -f "requirements.txt" ]; then
             pip install --quiet -r requirements.txt
         else
             pip install --quiet \
@@ -120,16 +126,16 @@ case $REPLY in
                 numpy==1.24.3 \
                 loguru==0.7.2 \
                 python-dotenv==1.0.0 \
-                pillow==10.2.0 \
-                opencv-python==4.9.0.80 \
-                pytesseract==0.3.10
+                pillow==10.2.0
         fi
         print_success "Standard dependencies installed"
         INSTALL_TYPE="standard"
         ;;
     3)
         print_info "Installing complete dependencies with AI models..."
-        if [ -f "requirements.txt" ]; then
+        if [ -f "requirements-full.txt" ]; then
+            pip install --quiet -r requirements-full.txt
+        elif [ -f "requirements.txt" ]; then
             pip install --quiet -r requirements.txt
         fi
         

@@ -1,47 +1,67 @@
-# Core Framework
-gradio==4.19.2
-crewai==0.28.8
-crewai-tools==0.2.6
+# KidSafe Alphabet Tutor - Requirements
+# Python 3.10+ required
 
-# Speech Processing
-faster-whisper==1.0.1
-piper-tts==1.2.0
-silero-vad==0.4.0
-pyaudio==0.2.14
-sounddevice==0.4.6
-librosa==0.10.1
-webrtcvad==2.0.10
+# ==========================================
+# CORE REQUIREMENTS (Minimal Installation)
+# ==========================================
+gradio>=4.19.2,<5.0.0
+numpy>=1.24.0
+loguru>=0.7.0,<1.0.0
 
-# Vision Processing
-opencv-python==4.9.0.80
-pytesseract==0.3.10
-ultralytics==8.1.27
-pillow==10.2.0
+# ==========================================
+# STANDARD REQUIREMENTS (Recommended)
+# ==========================================
+# Environment & Configuration
+python-dotenv>=1.0.0
 
-# LLM Integration
-ollama==0.1.7
-langchain==0.1.11
-langchain-community==0.0.27
+# Image Processing (for activities)
+Pillow>=10.0.0,<11.0.0
 
-# Audio/Video Utilities
-numpy==1.24.3
-scipy==1.11.4
-matplotlib==3.8.2
+# ==========================================
+# OPTIONAL AI COMPONENTS (Full Installation)
+# ==========================================
+# Speech Recognition (ASR)
+# Note: faster-whisper requires additional system dependencies
+# Uncomment if using speech features:
+# faster-whisper>=1.0.0,<2.0.0
+# sounddevice>=0.4.6
+# webrtcvad>=2.0.10
 
-# Session Management
-python-deque==1.0.0
-python-dotenv==1.0.0
+# Computer Vision (OCR & Object Detection)
+# Note: Requires tesseract system package
+# Uncomment if using vision features:
+# opencv-python>=4.9.0.80
+# pytesseract>=0.3.10
+# ultralytics>=8.1.0,<9.0.0
 
-# Async & Performance
-asyncio==3.4.3
-aiofiles==23.2.1
-threading-utils==0.2.0
+# Text-to-Speech (TTS)
+# Note: piper-tts has specific dependencies
+# Uncomment if using TTS:
+# piper-tts>=1.2.0
 
-# Safety & Content Moderation
-better-profanity==0.7.0
-pyenchant==3.2.2
+# Local LLM Support
+# Note: Requires Ollama server running
+# Uncomment if using local LLM:
+# ollama>=0.1.7
 
-# Development & Testing
-pytest==8.0.0
-pytest-asyncio==0.23.5
-loguru==0.7.2
+# Advanced Agent Framework
+# Note: CrewAI has heavy dependencies
+# Uncomment only if using advanced CrewAI features:
+# crewai>=0.28.0,<1.0.0
+# langchain>=0.1.0,<0.2.0
+# langchain-community>=0.0.27
+
+# ==========================================
+# DEVELOPMENT & TESTING
+# ==========================================
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# ==========================================
+# UTILITIES (Generally Compatible)
+# ==========================================
+# Content Moderation
+better-profanity>=0.7.0
+
+# Async Support
+aiofiles>=23.2.0

@@ -1,0 +1,23 @@
+# Standard Requirements for KidSafe Alphabet Tutor
+# Recommended for most users
+
+# Core
+gradio>=4.19.2,<5.0.0
+numpy>=1.24.0
+loguru>=0.7.0,<1.0.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# Image Processing
+Pillow>=10.0.0,<11.0.0
+
+# Content Moderation
+better-profanity>=0.7.0
+
+# Async Support
+aiofiles>=23.2.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
