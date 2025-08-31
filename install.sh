@@ -122,11 +122,11 @@ case $REPLY in
             pip install --quiet -r requirements.txt
         else
             pip install --quiet \
-                gradio==4.19.2 \
+                gradio==4.16.0 \
                 numpy==1.24.3 \
                 loguru==0.7.2 \
                 python-dotenv==1.0.0 \
-                pillow==10.2.0
+                Pillow==10.4.0
         fi
         print_success "Standard dependencies installed"
         INSTALL_TYPE="standard"

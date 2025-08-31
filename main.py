@@ -36,7 +36,7 @@ if __name__ == "__main__":
         app.queue(max_size=20).launch(
             server_name="0.0.0.0",
             server_port=7860,
-            share=False,
+            share=True,
             debug=False,
             show_api=False,
             show_error=True
@@ -46,5 +46,5 @@ if __name__ == "__main__":
         print("Thank you for using KidSafe Alphabet Tutor! 🫧")
     except Exception as e:
         print(f"\n❌ Error starting application: {e}")
-        print("Please run: ./setup.sh to install dependencies")
+        print("Please run: python setup.py to install dependencies")
         sys.exit(1)

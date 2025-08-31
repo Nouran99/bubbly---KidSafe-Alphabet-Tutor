@@ -52,7 +52,7 @@ def test_imports():
         return True
     else:
         print("⚠️  Some components need installation")
-        print("Run: ./setup.sh")
+        print("Run: ./python setup.py")
         return False
 
 def test_full_app():
@@ -132,7 +132,7 @@ def main():
         return 0
     else:
         print("⚠️  Some components need attention")
-        print("\nPlease run: ./setup.sh")
+        print("\nPlease run: ./python setup.py")
         return 1
 
 if __name__ == "__main__":

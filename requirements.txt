@@ -2,8 +2,8 @@
 # Full AI-Powered Mode with Speech, Vision, and Intelligence
 
 # ===== CORE DEPENDENCIES =====
-gradio==4.19.2
-gradio_client==0.10.1
+gradio==4.16.0
+gradio-client==1.4.0
 numpy==1.26.3
 loguru==0.7.2
 python-dotenv==1.0.0
@@ -12,7 +12,7 @@ python-dotenv==1.0.0
 fastapi==0.109.2
 pydantic==2.5.3
 starlette==0.36.3
-uvicorn==0.27.1
+uvicorn[standard]>=0.18.3
 httpx==0.26.0
 python-multipart==0.0.6
 aiofiles==23.2.1
@@ -36,7 +36,7 @@ webrtcvad==2.0.10
 # ===== VISION COMPONENTS =====
 opencv-python==4.9.0.80
 pytesseract==0.3.10
-Pillow==10.2.0
+Pillow==10.4.0
 
 # ===== UTILITIES =====
 huggingface-hub==0.20.3
@@ -46,10 +46,14 @@ requests==2.31.0
 pyyaml==6.0.1
 
 # ===== OPTIONAL HEAVY DEPENDENCIES =====
-# Uncomment for full ML capabilities (2GB+)
-# torch>=2.0.0
-# torchvision>=0.15.0
-# transformers>=4.36.0
-# ultralytics>=8.0.0  # YOLO for object detection
-# scikit-learn==1.4.0
-# scipy==1.11.0
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.36.0
+ultralytics>=8.0.0  # YOLO for object detection
+scikit-learn==1.4.0
+scipy==1.11.0
+
+SpeechRecognition==3.10.1
+pyaudio==0.2.13
+
+pyttsx3==2.90

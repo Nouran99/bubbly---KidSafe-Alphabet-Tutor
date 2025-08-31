@@ -21,8 +21,8 @@ All required files are present and properly organized:
 
 ### 2. Dependency Versions ✅
 All packages use compatible versions that work together:
-- **gradio==4.19.2** - Pinned to avoid ASGI errors
-- **fastapi==0.109.2** - Compatible with gradio 4.19.2
+- **gradio==4.16.0** - Pinned to avoid ASGI errors
+- **fastapi==0.109.2** - Compatible with gradio 5.0.0
 - **pydantic==2.5.3** - Compatible version
 - **starlette==0.36.3** - Matching FastAPI requirements
 - **uvicorn==0.27.1** - Compatible server
@@ -63,7 +63,7 @@ Verified through runtime testing:
    - Added `sound_description` and `common_confusions` fields
 
 2. **Version Pinning**
-   - Locked gradio to 4.19.2 to avoid ASGI TypeError
+   - Locked gradio to 5.0.0 to avoid ASGI TypeError
    - Pinned all related dependencies to compatible versions
 
 3. **Configuration Updates**

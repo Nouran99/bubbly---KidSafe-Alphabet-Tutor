@@ -19,7 +19,7 @@ class OllamaClient:
     Provides child-friendly responses for alphabet tutoring
     """
     
-    def __init__(self, base_url: str = "http://localhost:11434", model: str = "llama3.2:3b"):
+    def __init__(self, base_url: str = "http://localhost:11434", model: str = "llama3.1:8b"):
         """
         Initialize Ollama client
         Args:

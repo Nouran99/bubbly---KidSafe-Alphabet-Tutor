@@ -23,7 +23,7 @@ git clone https://github.com/Nouran99/bubbly---KidSafe-Alphabet-Tutor.git
 cd bubbly---KidSafe-Alphabet-Tutor
 
 # 2. Run setup (installs everything)
-./setup.sh
+./setup.py
 
 # 3. Start the application
 python main.py
@@ -83,7 +83,7 @@ python main.py
 
 ### Automated Setup (Recommended)
 ```bash
-./setup.sh
+./setup.py
 ```
 This script will:
 - Install system dependencies
@@ -179,7 +179,7 @@ NO_DATA_PERSISTENCE=true     # Zero storage
 ```
 kidsafe-alphabet-tutor/
 ├── main.py                  # Main entry point
-├── setup.sh                 # Installation script
+├── setup.py                 # Installation script
 ├── requirements.txt         # Python dependencies
 ├── .env                     # Configuration (create from .env.example)
 ├── app/
@@ -223,7 +223,7 @@ Run the app and check the status panel:
 | **Webcam not working** | Allow camera access in browser settings |
 | **AI not responding** | Ensure Ollama is running: `ollama serve` |
 | **Slow responses** | Use smaller AI model: `ollama pull phi` |
-| **Installation fails** | Run `./setup.sh` with sudo for system packages |
+| **Installation fails** | Run `./setup.py` with sudo for system packages |
 
 ### Debug Mode
 ```bash

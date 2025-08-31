@@ -57,7 +57,7 @@ git clone https://github.com/Nouran99/bubbly---KidSafe-Alphabet-Tutor.git
 cd bubbly---KidSafe-Alphabet-Tutor
 
 # 2. Setup (one command)
-./setup.sh
+./setup.py
 
 # 3. Run
 python main.py
@@ -74,7 +74,7 @@ http://localhost:7860
 ```
 kidsafe-alphabet-tutor/
 ├── main.py                 # Single entry point
-├── setup.sh               # Complete setup script
+├── setup.py               # Complete setup script
 ├── requirements.txt       # All dependencies
 ├── test_system.py         # Verification script
 ├── app/
@@ -184,7 +184,7 @@ COPPA_COMPLIANT=true     # Child safety
 
 ### Deployment
 - [x] Single entry point (main.py)
-- [x] One-command setup (setup.sh)
+- [x] One-command setup (setup.py)
 - [x] All dependencies listed
 - [x] GitHub repository updated
 - [x] Documentation complete
@@ -206,7 +206,7 @@ All assessment requirements have been met and exceeded:
 
 The system has been simplified to:
 - **1 main file** to run (main.py)
-- **1 setup script** (setup.sh)
+- **1 setup script** (setup.py)
 - **1 app file** with everything (full_ai_app.py)
 
 ---

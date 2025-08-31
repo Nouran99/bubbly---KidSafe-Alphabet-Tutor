@@ -403,13 +403,13 @@ class FullAIAlphabetTutor:
         
         summary = f"""
         📊 **Assessment Summary**
-        
+            
         **Session Duration**: {duration} minutes
         **Interactions**: {data['interaction_count']}
-        **Letters Attempted**: {', '.join(set(data['letters_attempted'])[:10])}
-        **Objects Recognized**: {', '.join(set(data['objects_recognized'])[:5])}
+        **Letters Attempted**: {', '.join(list(set(data['letters_attempted']))[:10])}
+        **Objects Recognized**: {', '.join(list(set(data['objects_recognized']))[:5])}
         **Pronunciation Score**: {avg_pronunciation:.1%}
-        
+            
         **Current Progress**:
         - Current Letter: {self.session_memory.derived_state.current_letter}
         - Difficulty: {self.session_memory.derived_state.difficulty_level.value}
@@ -445,34 +445,34 @@ def create_full_interface():
                     bubble_full_width=False,
                     label="Conversation with Bubbly"
                 )
-                
+                print("Chatbot initialized")
                 # Input methods
                 with gr.Tab("🎤 Speech"):
                     audio_input = gr.Audio(
-                        source="microphone",
+                        sources="microphone",
                         type="filepath",
                         label="Click to speak!"
                     )
                     speech_button = gr.Button("🗣️ Process Speech", variant="primary")
-                
+                print("Speech input initialized")
                 with gr.Tab("⌨️ Text"):
                     text_input = gr.Textbox(
                         placeholder="Type your message here...",
                         label="Text Input"
                     )
                     text_button = gr.Button("📤 Send Text", variant="primary")
-                
+                print("Text input initialized")
                 with gr.Tab("📷 Vision"):
                     image_input = gr.Image(
-                        source="webcam",
+                        sources="webcam",
                         type="numpy",
                         label="Show me a letter or object!"
                     )
                     vision_button = gr.Button("👁️ Process Image", variant="primary")
-                
+                print("Vision input initialized")
                 # Clear button
                 clear_button = gr.Button("🔄 Clear Conversation")
-            
+            print("Clear button initialized")
             # Assessment and status column
             with gr.Column(scale=1):
                 # System status
@@ -483,7 +483,7 @@ def create_full_interface():
                 **Vision**: {'✅ Ready' if VISION_AVAILABLE else '❌ Unavailable'}
                 **TTS**: {'✅ Active' if SPEECH_AVAILABLE else '❌ Unavailable'}
                 """)
-                
+                print("Status display initialized")
                 # Current lesson
                 gr.Markdown("### 📚 Current Lesson")
                 lesson_display = gr.Markdown("""
@@ -491,16 +491,14 @@ def create_full_interface():
                 **Sound**: /ay/
                 **Example**: Apple
                 """)
-                
+                print("Lesson display initialized")
                 # Assessment summary
                 gr.Markdown("### 📊 Assessment")
-                assessment_display = gr.Markdown(
-                    tutor.get_assessment_summary()
-                )
-                
+                assessment_display = gr.Markdown("")
+                print("Assessment display initialized")
                 # Refresh button
                 refresh_button = gr.Button("🔄 Update Assessment", size="sm")
-        
+                print("Refresh button initialized")
         # Phonics guide
         with gr.Row():
             gr.Markdown("""
@@ -517,7 +515,7 @@ def create_full_interface():
             2. **Vision**: Show me the letter or an object that starts with it
             3. **Practice**: Repeat after Bubbly for perfect pronunciation
             """)
-        
+        print("Phonics guide initialized")
         # Event handlers
         def handle_speech(audio, history):
             if audio:
@@ -545,6 +543,14 @@ def create_full_interface():
         
         def clear_conversation():
             tutor.session_memory.reset()
+            # Reset assessment data to initial state
+            tutor.assessment_data = {
+                "pronunciation_scores": [],
+                "letters_attempted": [],
+                "objects_recognized": [],
+                "interaction_count": 0,
+                "start_time": datetime.now()
+            }
             return None, tutor.get_assessment_summary()
         
         # Connect events
@@ -573,7 +579,7 @@ def create_full_interface():
         )
         
         refresh_button.click(
-            lambda: tutor.get_assessment_summary(),
+            lambda: str(tutor.get_assessment_summary() or ""),
             None,
             assessment_display
         )
@@ -603,7 +609,7 @@ if __name__ == "__main__":
     app.queue(max_size=20).launch(
         server_name="0.0.0.0",
         server_port=7860,
-        share=False,
+        share=True,
         debug=False,
         show_api=False
     )

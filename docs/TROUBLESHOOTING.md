@@ -58,7 +58,7 @@ chmod +x venv/bin/activate
 #### ❌ "No module named 'gradio'"
 **Solution**:
 ```bash
-pip install gradio==4.19.2
+pip install gradio==4.16.0
 # Or run full setup
 python setup.py --simple
 ```

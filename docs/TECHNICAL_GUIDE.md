@@ -141,7 +141,7 @@ class DerivedState:
 
 ## 🔧 Technical Decisions
 
-### Why Gradio 4.19.2?
+### Why Gradio 5.0.0?
 - Later versions cause ASGI TypeErrors on Windows
 - Compatible with our FastAPI/Pydantic versions
 - Stable and well-tested
@@ -162,7 +162,7 @@ class DerivedState:
 
 ### Core Dependencies
 ```
-gradio==4.19.2          # Pinned for compatibility
+gradio==4.16.0          # Pinned for compatibility
 fastapi==0.109.2        # Matches Gradio requirements
 pydantic==2.5.3         # Compatible version
 starlette==0.36.3       # Required by FastAPI
@@ -172,8 +172,8 @@ uvicorn==0.27.1         # ASGI server
 ### Version Compatibility Matrix
 | Package | Version | Why This Version |
 |---------|---------|------------------|
-| gradio | 4.19.2 | Avoids ASGI TypeError |
-| fastapi | 0.109.2 | Compatible with Gradio 4.19.2 |
+| gradio | 5.0.0 | Avoids ASGI TypeError |
+| fastapi | 0.109.2 | Compatible with Gradio 5.0.0 |
 | pydantic | 2.5.3 | Avoids schema generation errors |
 | starlette | 0.36.3 | Required by FastAPI 0.109.2 |
 
@@ -215,11 +215,11 @@ CMD ["python", "app/simple_app.py"]
 
 #### 1. ASGI TypeError
 **Cause**: Incompatible Gradio version
-**Fix**: Ensure `gradio==4.19.2`
+**Fix**: Ensure `gradio==4.16.0`
 
 #### 2. Pydantic Schema Error
 **Cause**: Version mismatch
-**Fix**: Run `python setup.py --fix-windows`
+**Fix**: Run `setup.py --fix-windows`
 
 #### 3. Import Errors
 **Cause**: Missing dependencies
