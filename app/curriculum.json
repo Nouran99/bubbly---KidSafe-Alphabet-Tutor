@@ -1,730 +1,720 @@
 {
-  "A": {
-    "letter": "A",
-    "phonetic": "a as in apple",
-    "examples": [
-      "Apple",
-      "Ant"
-    ],
-    "difficulty": "easy",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say A! A is for Apple!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with A?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter A with Apple"
-      }
-    ],
-    "encouragement": [
-      "Amazing! You learned the letter A!",
-      "Great job! A is for Apple!",
-      "You're doing amazing with the letter A!"
-    ]
+  "letters": {
+    "A": {
+      "letter": "A",
+      "sound_description": "ay as in apple",
+      "phonetic": "a as in apple",
+      "example_words": ["Apple", "Ant", "Airplane"],
+      "difficulty": "easy",
+      "common_confusions": ["E"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say A! A is for Apple!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with A?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter A with Apple"
+        }
+      ],
+      "encouragement": [
+        "Amazing! You learned the letter A!",
+        "Great job! A is for Apple!",
+        "You're doing amazing with the letter A!"
+      ]
+    },
+    "B": {
+      "letter": "B",
+      "sound_description": "buh as in ball",
+      "phonetic": "b as in ball",
+      "example_words": ["Ball", "Bear", "Banana"],
+      "difficulty": "medium",
+      "common_confusions": ["D", "P"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say B! B is for Ball!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with B?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter B with Ball"
+        }
+      ],
+      "encouragement": [
+        "Brilliant! You learned the letter B!",
+        "Super! B is for Ball!",
+        "You're doing great with the letter B!"
+      ]
+    },
+    "C": {
+      "letter": "C",
+      "sound_description": "kuh as in cat",
+      "phonetic": "c as in cat",
+      "example_words": ["Cat", "Car", "Cookie"],
+      "difficulty": "medium",
+      "common_confusions": ["K", "S"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say C! C is for Cat!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with C?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter C with Cat"
+        }
+      ],
+      "encouragement": [
+        "Cool! You learned the letter C!",
+        "Clever! C is for Cat!",
+        "You're doing wonderfully with the letter C!"
+      ]
+    },
+    "D": {
+      "letter": "D",
+      "sound_description": "duh as in dog",
+      "phonetic": "d as in dog",
+      "example_words": ["Dog", "Duck", "Door"],
+      "difficulty": "medium",
+      "common_confusions": ["B"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say D! D is for Dog!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with D?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter D with Dog"
+        }
+      ],
+      "encouragement": [
+        "Delightful! You learned the letter D!",
+        "Dazzling! D is for Dog!",
+        "You're doing amazingly with the letter D!"
+      ]
+    },
+    "E": {
+      "letter": "E",
+      "sound_description": "ee as in elephant",
+      "phonetic": "e as in elephant",
+      "example_words": ["Elephant", "Egg", "Eagle"],
+      "difficulty": "easy",
+      "common_confusions": ["A", "I"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say E! E is for Elephant!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with E?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter E with Elephant"
+        }
+      ],
+      "encouragement": [
+        "Excellent! You learned the letter E!",
+        "Extraordinary! E is for Elephant!",
+        "You're doing excellently with the letter E!"
+      ]
+    },
+    "F": {
+      "letter": "F",
+      "sound_description": "eff as in fish",
+      "phonetic": "f as in fish",
+      "example_words": ["Fish", "Frog", "Flower"],
+      "difficulty": "medium",
+      "common_confusions": ["V"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say F! F is for Fish!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with F?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter F with Fish"
+        }
+      ],
+      "encouragement": [
+        "Fantastic! You learned the letter F!",
+        "Fabulous! F is for Fish!",
+        "You're doing fabulously with the letter F!"
+      ]
+    },
+    "G": {
+      "letter": "G",
+      "sound_description": "guh as in goat",
+      "phonetic": "g as in goat",
+      "example_words": ["Goat", "Grape", "Guitar"],
+      "difficulty": "medium",
+      "common_confusions": ["J"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say G! G is for Goat!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with G?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter G with Goat"
+        }
+      ],
+      "encouragement": [
+        "Great! You learned the letter G!",
+        "Good job! G is for Goat!",
+        "You're doing great with the letter G!"
+      ]
+    },
+    "H": {
+      "letter": "H",
+      "sound_description": "huh as in house",
+      "phonetic": "h as in house",
+      "example_words": ["House", "Horse", "Hat"],
+      "difficulty": "medium",
+      "common_confusions": [],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say H! H is for House!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with H?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter H with House"
+        }
+      ],
+      "encouragement": [
+        "Hooray! You learned the letter H!",
+        "Happy day! H is for House!",
+        "You're doing happily with the letter H!"
+      ]
+    },
+    "I": {
+      "letter": "I",
+      "sound_description": "ih as in igloo",
+      "phonetic": "i as in igloo",
+      "example_words": ["Igloo", "Ice cream", "Island"],
+      "difficulty": "easy",
+      "common_confusions": ["E"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say I! I is for Igloo!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with I?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter I with Igloo"
+        }
+      ],
+      "encouragement": [
+        "Incredible! You learned the letter I!",
+        "Impressive! I is for Igloo!",
+        "You're doing incredibly with the letter I!"
+      ]
+    },
+    "J": {
+      "letter": "J",
+      "sound_description": "juh as in jump",
+      "phonetic": "j as in jump",
+      "example_words": ["Jump", "Jar", "Jellyfish"],
+      "difficulty": "hard",
+      "common_confusions": ["G"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say J! J is for Jump!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with J?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter J with Jump"
+        }
+      ],
+      "encouragement": [
+        "Joyful! You learned the letter J!",
+        "Jumping for joy! J is for Jump!",
+        "You're doing joyfully with the letter J!"
+      ]
+    },
+    "K": {
+      "letter": "K",
+      "sound_description": "kuh as in kite",
+      "phonetic": "k as in kite",
+      "example_words": ["Kite", "Key", "Kangaroo"],
+      "difficulty": "hard",
+      "common_confusions": ["C"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say K! K is for Kite!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with K?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter K with Kite"
+        }
+      ],
+      "encouragement": [
+        "Keen! You learned the letter K!",
+        "Kudos! K is for Kite!",
+        "You're doing keenly with the letter K!"
+      ]
+    },
+    "L": {
+      "letter": "L",
+      "sound_description": "ell as in lion",
+      "phonetic": "l as in lion",
+      "example_words": ["Lion", "Lemon", "Ladder"],
+      "difficulty": "medium",
+      "common_confusions": [],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say L! L is for Lion!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with L?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter L with Lion"
+        }
+      ],
+      "encouragement": [
+        "Lovely! You learned the letter L!",
+        "Look at you! L is for Lion!",
+        "You're doing lovingly with the letter L!"
+      ]
+    },
+    "M": {
+      "letter": "M",
+      "sound_description": "em as in monkey",
+      "phonetic": "m as in monkey",
+      "example_words": ["Monkey", "Moon", "Mouse"],
+      "difficulty": "medium",
+      "common_confusions": ["N"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say M! M is for Monkey!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with M?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter M with Monkey"
+        }
+      ],
+      "encouragement": [
+        "Marvelous! You learned the letter M!",
+        "Magnificent! M is for Monkey!",
+        "You're doing marvelously with the letter M!"
+      ]
+    },
+    "N": {
+      "letter": "N",
+      "sound_description": "en as in nest",
+      "phonetic": "n as in nest",
+      "example_words": ["Nest", "Nose", "Night"],
+      "difficulty": "medium",
+      "common_confusions": ["M"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say N! N is for Nest!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with N?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter N with Nest"
+        }
+      ],
+      "encouragement": [
+        "Nice! You learned the letter N!",
+        "Neat! N is for Nest!",
+        "You're doing nicely with the letter N!"
+      ]
+    },
+    "O": {
+      "letter": "O",
+      "sound_description": "oh as in octopus",
+      "phonetic": "o as in octopus",
+      "example_words": ["Octopus", "Orange", "Owl"],
+      "difficulty": "easy",
+      "common_confusions": ["U"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say O! O is for Octopus!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with O?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter O with Octopus"
+        }
+      ],
+      "encouragement": [
+        "Outstanding! You learned the letter O!",
+        "Oh wow! O is for Octopus!",
+        "You're doing outstandingly with the letter O!"
+      ]
+    },
+    "P": {
+      "letter": "P",
+      "sound_description": "puh as in penguin",
+      "phonetic": "p as in penguin",
+      "example_words": ["Penguin", "Pizza", "Puppy"],
+      "difficulty": "medium",
+      "common_confusions": ["B"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say P! P is for Penguin!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with P?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter P with Penguin"
+        }
+      ],
+      "encouragement": [
+        "Perfect! You learned the letter P!",
+        "Proud of you! P is for Penguin!",
+        "You're doing perfectly with the letter P!"
+      ]
+    },
+    "Q": {
+      "letter": "Q",
+      "sound_description": "kwuh as in queen",
+      "phonetic": "q as in queen",
+      "example_words": ["Queen", "Quilt", "Question"],
+      "difficulty": "hard",
+      "common_confusions": ["O"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say Q! Q is for Queen!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with Q?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter Q with Queen"
+        }
+      ],
+      "encouragement": [
+        "Quick learner! You learned the letter Q!",
+        "Quite amazing! Q is for Queen!",
+        "You're doing quickly with the letter Q!"
+      ]
+    },
+    "R": {
+      "letter": "R",
+      "sound_description": "arr as in rabbit",
+      "phonetic": "r as in rabbit",
+      "example_words": ["Rabbit", "Rainbow", "Robot"],
+      "difficulty": "medium",
+      "common_confusions": [],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say R! R is for Rabbit!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with R?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter R with Rabbit"
+        }
+      ],
+      "encouragement": [
+        "Right on! You learned the letter R!",
+        "Really great! R is for Rabbit!",
+        "You're doing really well with the letter R!"
+      ]
+    },
+    "S": {
+      "letter": "S",
+      "sound_description": "ess as in sun",
+      "phonetic": "s as in sun",
+      "example_words": ["Sun", "Star", "Snake"],
+      "difficulty": "medium",
+      "common_confusions": ["C"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say S! S is for Sun!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with S?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter S with Sun"
+        }
+      ],
+      "encouragement": [
+        "Super! You learned the letter S!",
+        "Stellar! S is for Sun!",
+        "You're doing superbly with the letter S!"
+      ]
+    },
+    "T": {
+      "letter": "T",
+      "sound_description": "tuh as in turtle",
+      "phonetic": "t as in turtle",
+      "example_words": ["Turtle", "Tree", "Train"],
+      "difficulty": "medium",
+      "common_confusions": [],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say T! T is for Turtle!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with T?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter T with Turtle"
+        }
+      ],
+      "encouragement": [
+        "Terrific! You learned the letter T!",
+        "Tremendous! T is for Turtle!",
+        "You're doing terrifically with the letter T!"
+      ]
+    },
+    "U": {
+      "letter": "U",
+      "sound_description": "uh as in umbrella",
+      "phonetic": "u as in umbrella",
+      "example_words": ["Umbrella", "Unicorn", "Under"],
+      "difficulty": "easy",
+      "common_confusions": ["O"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say U! U is for Umbrella!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with U?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter U with Umbrella"
+        }
+      ],
+      "encouragement": [
+        "Unbelievable! You learned the letter U!",
+        "Unique! U is for Umbrella!",
+        "You're doing uniquely with the letter U!"
+      ]
+    },
+    "V": {
+      "letter": "V",
+      "sound_description": "vee as in violin",
+      "phonetic": "v as in violin",
+      "example_words": ["Violin", "Van", "Volcano"],
+      "difficulty": "hard",
+      "common_confusions": ["F"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say V! V is for Violin!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with V?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter V with Violin"
+        }
+      ],
+      "encouragement": [
+        "Very good! You learned the letter V!",
+        "Victorious! V is for Violin!",
+        "You're doing very well with the letter V!"
+      ]
+    },
+    "W": {
+      "letter": "W",
+      "sound_description": "wuh as in whale",
+      "phonetic": "w as in whale",
+      "example_words": ["Whale", "Water", "Window"],
+      "difficulty": "hard",
+      "common_confusions": ["M"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say W! W is for Whale!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with W?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter W with Whale"
+        }
+      ],
+      "encouragement": [
+        "Wonderful! You learned the letter W!",
+        "Wow! W is for Whale!",
+        "You're doing wonderfully with the letter W!"
+      ]
+    },
+    "X": {
+      "letter": "X",
+      "sound_description": "ex as in x-ray",
+      "phonetic": "x as in x-ray",
+      "example_words": ["X-ray", "Xylophone", "Box"],
+      "difficulty": "hard",
+      "common_confusions": [],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say X! X is for X-ray!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that ends with X?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter X with X-ray"
+        }
+      ],
+      "encouragement": [
+        "X-cellent! You learned the letter X!",
+        "X-traordinary! X is for X-ray!",
+        "You're doing excellently with the letter X!"
+      ]
+    },
+    "Y": {
+      "letter": "Y",
+      "sound_description": "why as in yellow",
+      "phonetic": "y as in yellow",
+      "example_words": ["Yellow", "Yo-yo", "Yarn"],
+      "difficulty": "hard",
+      "common_confusions": [],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say Y! Y is for Yellow!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with Y?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter Y with Yellow"
+        }
+      ],
+      "encouragement": [
+        "Yay! You learned the letter Y!",
+        "Yes! Y is for Yellow!",
+        "You're doing yay-worthy with the letter Y!"
+      ]
+    },
+    "Z": {
+      "letter": "Z",
+      "sound_description": "zee as in zebra",
+      "phonetic": "z as in zebra",
+      "example_words": ["Zebra", "Zoo", "Zipper"],
+      "difficulty": "hard",
+      "common_confusions": ["S"],
+      "activities": [
+        {
+          "type": "repeat_after_me",
+          "content": "Say Z! Z is for Zebra!"
+        },
+        {
+          "type": "find_an_object",
+          "content": "Can you find something that starts with Z?"
+        },
+        {
+          "type": "letter_matching",
+          "content": "Match the letter Z with Zebra"
+        }
+      ],
+      "encouragement": [
+        "Zoomtastic! You learned the letter Z!",
+        "Zowie! Z is for Zebra!",
+        "You're doing zestfully with the letter Z!"
+      ]
+    }
   },
-  "B": {
-    "letter": "B",
-    "phonetic": "b as in ball",
-    "examples": [
-      "Ball",
-      "Bear"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say B! B is for Ball!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with B?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter B with Ball"
-      }
-    ],
-    "encouragement": [
-      "Beautiful! You learned the letter B!",
-      "Great job! B is for Ball!",
-      "You're doing amazing with the letter B!"
-    ]
-  },
-  "C": {
-    "letter": "C",
-    "phonetic": "c as in cat",
-    "examples": [
-      "Cat",
-      "Car"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say C! C is for Cat!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with C?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter C with Cat"
-      }
-    ],
-    "encouragement": [
-      "Colorful! You learned the letter C!",
-      "Great job! C is for Cat!",
-      "You're doing amazing with the letter C!"
-    ]
-  },
-  "D": {
-    "letter": "D",
-    "phonetic": "d as in dog",
-    "examples": [
-      "Dog",
-      "Duck"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say D! D is for Dog!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with D?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter D with Dog"
-      }
-    ],
-    "encouragement": [
-      "Delightful! You learned the letter D!",
-      "Great job! D is for Dog!",
-      "You're doing amazing with the letter D!"
-    ]
-  },
-  "E": {
-    "letter": "E",
-    "phonetic": "e as in elephant",
-    "examples": [
-      "Elephant",
-      "Egg"
-    ],
-    "difficulty": "easy",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say E! E is for Elephant!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with E?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter E with Elephant"
-      }
-    ],
-    "encouragement": [
-      "Exciting! You learned the letter E!",
-      "Great job! E is for Elephant!",
-      "You're doing amazing with the letter E!"
-    ]
-  },
-  "F": {
-    "letter": "F",
-    "phonetic": "f as in fish",
-    "examples": [
-      "Fish",
-      "Flower"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say F! F is for Fish!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with F?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter F with Fish"
-      }
-    ],
-    "encouragement": [
-      "Fantastic! You learned the letter F!",
-      "Great job! F is for Fish!",
-      "You're doing amazing with the letter F!"
-    ]
-  },
-  "G": {
-    "letter": "G",
-    "phonetic": "g as in giraffe",
-    "examples": [
-      "Giraffe",
-      "Grape"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say G! G is for Giraffe!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with G?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter G with Giraffe"
-      }
-    ],
-    "encouragement": [
-      "Great! You learned the letter G!",
-      "Great job! G is for Giraffe!",
-      "You're doing amazing with the letter G!"
-    ]
-  },
-  "H": {
-    "letter": "H",
-    "phonetic": "h as in house",
-    "examples": [
-      "House",
-      "Hat"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say H! H is for House!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with H?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter H with House"
-      }
-    ],
-    "encouragement": [
-      "Happy! You learned the letter H!",
-      "Great job! H is for House!",
-      "You're doing amazing with the letter H!"
-    ]
-  },
-  "I": {
-    "letter": "I",
-    "phonetic": "i as in ice cream",
-    "examples": [
-      "Ice cream",
-      "Igloo"
-    ],
-    "difficulty": "easy",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say I! I is for Ice cream!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with I?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter I with Ice cream"
-      }
-    ],
-    "encouragement": [
-      "Interesting! You learned the letter I!",
-      "Great job! I is for Ice cream!",
-      "You're doing amazing with the letter I!"
-    ]
-  },
-  "J": {
-    "letter": "J",
-    "phonetic": "j as in jellyfish",
-    "examples": [
-      "Jellyfish",
-      "Juice"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say J! J is for Jellyfish!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with J?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter J with Jellyfish"
-      }
-    ],
-    "encouragement": [
-      "Joyful! You learned the letter J!",
-      "Great job! J is for Jellyfish!",
-      "You're doing amazing with the letter J!"
-    ]
-  },
-  "K": {
-    "letter": "K",
-    "phonetic": "k as in kite",
-    "examples": [
-      "Kite",
-      "Kangaroo"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say K! K is for Kite!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with K?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter K with Kite"
-      }
-    ],
-    "encouragement": [
-      "Kind! You learned the letter K!",
-      "Great job! K is for Kite!",
-      "You're doing amazing with the letter K!"
-    ]
-  },
-  "L": {
-    "letter": "L",
-    "phonetic": "l as in lion",
-    "examples": [
-      "Lion",
-      "Lemon"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say L! L is for Lion!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with L?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter L with Lion"
-      }
-    ],
-    "encouragement": [
-      "Lovely! You learned the letter L!",
-      "Great job! L is for Lion!",
-      "You're doing amazing with the letter L!"
-    ]
-  },
-  "M": {
-    "letter": "M",
-    "phonetic": "m as in monkey",
-    "examples": [
-      "Monkey",
-      "Moon"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say M! M is for Monkey!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with M?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter M with Monkey"
-      }
-    ],
-    "encouragement": [
-      "Magical! You learned the letter M!",
-      "Great job! M is for Monkey!",
-      "You're doing amazing with the letter M!"
-    ]
-  },
-  "N": {
-    "letter": "N",
-    "phonetic": "n as in nest",
-    "examples": [
-      "Nest",
-      "Nose"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say N! N is for Nest!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with N?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter N with Nest"
-      }
-    ],
-    "encouragement": [
-      "Nice! You learned the letter N!",
-      "Great job! N is for Nest!",
-      "You're doing amazing with the letter N!"
-    ]
-  },
-  "O": {
-    "letter": "O",
-    "phonetic": "o as in octopus",
-    "examples": [
-      "Octopus",
-      "Orange"
-    ],
-    "difficulty": "easy",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say O! O is for Octopus!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with O?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter O with Octopus"
-      }
-    ],
-    "encouragement": [
-      "Outstanding! You learned the letter O!",
-      "Great job! O is for Octopus!",
-      "You're doing amazing with the letter O!"
-    ]
-  },
-  "P": {
-    "letter": "P",
-    "phonetic": "p as in penguin",
-    "examples": [
-      "Penguin",
-      "Pizza"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say P! P is for Penguin!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with P?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter P with Penguin"
-      }
-    ],
-    "encouragement": [
-      "Perfect! You learned the letter P!",
-      "Great job! P is for Penguin!",
-      "You're doing amazing with the letter P!"
-    ]
-  },
-  "Q": {
-    "letter": "Q",
-    "phonetic": "q as in queen",
-    "examples": [
-      "Queen",
-      "Quilt"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say Q! Q is for Queen!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with Q?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter Q with Queen"
-      }
-    ],
-    "encouragement": [
-      "Quick! You learned the letter Q!",
-      "Great job! Q is for Queen!",
-      "You're doing amazing with the letter Q!"
-    ]
-  },
-  "R": {
-    "letter": "R",
-    "phonetic": "r as in rainbow",
-    "examples": [
-      "Rainbow",
-      "Rabbit"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say R! R is for Rainbow!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with R?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter R with Rainbow"
-      }
-    ],
-    "encouragement": [
-      "Remarkable! You learned the letter R!",
-      "Great job! R is for Rainbow!",
-      "You're doing amazing with the letter R!"
-    ]
-  },
-  "S": {
-    "letter": "S",
-    "phonetic": "s as in sun",
-    "examples": [
-      "Sun",
-      "Star"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say S! S is for Sun!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with S?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter S with Sun"
-      }
-    ],
-    "encouragement": [
-      "Super! You learned the letter S!",
-      "Great job! S is for Sun!",
-      "You're doing amazing with the letter S!"
-    ]
-  },
-  "T": {
-    "letter": "T",
-    "phonetic": "t as in tiger",
-    "examples": [
-      "Tiger",
-      "Tree"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say T! T is for Tiger!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with T?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter T with Tiger"
-      }
-    ],
-    "encouragement": [
-      "Terrific! You learned the letter T!",
-      "Great job! T is for Tiger!",
-      "You're doing amazing with the letter T!"
-    ]
-  },
-  "U": {
-    "letter": "U",
-    "phonetic": "u as in umbrella",
-    "examples": [
-      "Umbrella",
-      "Unicorn"
-    ],
-    "difficulty": "easy",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say U! U is for Umbrella!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with U?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter U with Umbrella"
-      }
-    ],
-    "encouragement": [
-      "Unique! You learned the letter U!",
-      "Great job! U is for Umbrella!",
-      "You're doing amazing with the letter U!"
-    ]
-  },
-  "V": {
-    "letter": "V",
-    "phonetic": "v as in violin",
-    "examples": [
-      "Violin",
-      "Volcano"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say V! V is for Violin!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with V?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter V with Violin"
-      }
-    ],
-    "encouragement": [
-      "Vibrant! You learned the letter V!",
-      "Great job! V is for Violin!",
-      "You're doing amazing with the letter V!"
-    ]
-  },
-  "W": {
-    "letter": "W",
-    "phonetic": "w as in whale",
-    "examples": [
-      "Whale",
-      "Watermelon"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say W! W is for Whale!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with W?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter W with Whale"
-      }
-    ],
-    "encouragement": [
-      "Wonderful! You learned the letter W!",
-      "Great job! W is for Whale!",
-      "You're doing amazing with the letter W!"
-    ]
-  },
-  "X": {
-    "letter": "X",
-    "phonetic": "x as in x-ray",
-    "examples": [
-      "X-ray",
-      "Xylophone"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say X! X is for X-ray!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with X?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter X with X-ray"
-      }
-    ],
-    "encouragement": [
-      "eXcellent! You learned the letter X!",
-      "Great job! X is for X-ray!",
-      "You're doing amazing with the letter X!"
-    ]
-  },
-  "Y": {
-    "letter": "Y",
-    "phonetic": "y as in yo-yo",
-    "examples": [
-      "Yo-yo",
-      "Yacht"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say Y! Y is for Yo-yo!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with Y?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter Y with Yo-yo"
-      }
-    ],
-    "encouragement": [
-      "Yummy! You learned the letter Y!",
-      "Great job! Y is for Yo-yo!",
-      "You're doing amazing with the letter Y!"
-    ]
-  },
-  "Z": {
-    "letter": "Z",
-    "phonetic": "z as in zebra",
-    "examples": [
-      "Zebra",
-      "Zoo"
-    ],
-    "difficulty": "medium",
-    "activities": [
-      {
-        "type": "repeat_after_me",
-        "content": "Say Z! Z is for Zebra!"
-      },
-      {
-        "type": "find_an_object",
-        "content": "Can you find something that starts with Z?"
-      },
-      {
-        "type": "letter_matching",
-        "content": "Match the letter Z with Zebra"
-      }
-    ],
-    "encouragement": [
-      "Zesty! You learned the letter Z!",
-      "Great job! Z is for Zebra!",
-      "You're doing amazing with the letter Z!"
-    ]
+  "activities": {
+    "repeat_after_me": {
+      "instructions": "Listen carefully and repeat the letter sound",
+      "duration": "30 seconds"
+    },
+    "find_an_object": {
+      "instructions": "Look around and find objects that start with this letter",
+      "duration": "1 minute"
+    },
+    "letter_matching": {
+      "instructions": "Match the letter with the correct picture",
+      "duration": "45 seconds"
+    }
   }
 }
