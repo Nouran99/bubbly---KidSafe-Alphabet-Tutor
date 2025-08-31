@@ -1,0 +1,19 @@
+# Fixed Requirements for KidSafe Alphabet Tutor
+# These versions are tested to work together without the ASGI error
+
+# Core Dependencies (Known Compatible Versions)
+gradio==4.19.2
+gradio_client==0.10.1
+numpy>=1.24.0
+loguru>=0.7.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Additional tested dependencies
+huggingface-hub>=0.20.0
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Optional but recommended
+Pillow>=10.0.0

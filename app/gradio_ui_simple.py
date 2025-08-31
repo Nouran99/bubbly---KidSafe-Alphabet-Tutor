@@ -445,7 +445,9 @@ if __name__ == "__main__":
             share=False,
             show_api=False,
             inbrowser=False,
-            prevent_thread_lock=False
+            prevent_thread_lock=False,
+            show_error=True,
+            quiet=True
         )
     except ValueError:
         # Fallback if localhost not accessible
@@ -454,5 +456,7 @@ if __name__ == "__main__":
             server_port=7860,
             share=False,
             show_api=False,
-            inbrowser=False
+            inbrowser=False,
+            show_error=True,
+            quiet=True
         )
