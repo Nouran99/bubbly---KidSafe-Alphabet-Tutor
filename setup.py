@@ -261,9 +261,9 @@ def print_next_steps(mode="simple"):
     
     print(f"\n2. Start the application ({mode} mode):")
     if mode == "simple":
-        print("   python app/simple_app.py")
+        print("   python app/simple_app.py  # Basic chat interface")
     else:
-        print("   python app/main.py")
+        print("   python app/main.py       # Full UI with audio/image support")
     
     print("\n3. Open your browser and go to:")
     print("   http://localhost:7860")

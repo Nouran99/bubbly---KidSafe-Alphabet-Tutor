@@ -50,9 +50,23 @@ python app/simple_app.py
 # Run setup with full features
 python setup.py --full
 
-# Start with full features (if available)
+# Start with full features
 python app/main.py
 ```
+
+#### Difference Between Modes
+
+| Feature | Simple Mode (`simple_app.py`) | Full Mode (`main.py`) |
+|---------|--------------------------------|-----------------------|
+| **Chat Interface** | ✅ Basic | ✅ Advanced |
+| **Text Input** | ✅ Yes | ✅ Yes |
+| **Audio Input** | ❌ No | ✅ Yes |
+| **Image Recognition** | ❌ No | ✅ Yes |
+| **Settings Panel** | ❌ No | ✅ Yes |
+| **Parental Gate** | ❌ No | ✅ Yes |
+| **UI Complexity** | Simple | Full |
+| **Dependencies** | Minimal | Complete |
+| **Best For** | Quick start, testing | Production use |
 
 ### Windows Users - Special Fix
 If you encounter ASGI or Pydantic errors on Windows:
