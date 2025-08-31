@@ -1,166 +1,148 @@
 # 🎓 KidSafe Alphabet Tutor
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![COPPA](https://img.shields.io/badge/COPPA-Compliant-success)](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa)
-[![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen)](tests/test_acceptance.py)
+An AI-powered educational system that teaches the alphabet to children aged 3-7 with complete safety and privacy.
 
-An intelligent, multi-agent educational system designed to teach the alphabet to children aged 3-7. Built for CNTXT.AI's hiring process, demonstrating advanced AI engineering with a focus on child safety and educational excellence.
+## ✨ Features
 
-## ✨ Key Features
-
-- 🤖 **5 Specialized AI Agents**: Understanding, Safety, Personalization, Lesson, and Feedback agents working in harmony
-- 🔒 **100% COPPA Compliant**: Zero data retention with session-only memory
-- 👶 **Child-Safe Design**: Multi-layer content filtering and age-appropriate responses
-- 🎮 **6 Interactive Activities**: Engaging games for different learning styles
-- 🗣️ **Multi-Modal Support**: Text, speech recognition, and vision capabilities
-- ⭐ **Gamification System**: Stars, badges, and progress tracking for motivation
-- ⚡ **Lightning Fast**: Sub-1.2 second response time (0.8s average)
-- 🐳 **Docker Ready**: Containerized for easy deployment
+- 🤖 **5 Specialized AI Agents** - Understanding, Safety, Personalization, Lesson, and Feedback agents
+- 🔒 **100% COPPA Compliant** - Zero data retention, session-only memory
+- 👶 **Child-Safe** - Multi-layer content filtering
+- 🎮 **Interactive Learning** - 6 engaging activities for different learning styles
+- ⭐ **Gamification** - Stars, badges, and progress tracking
+- ⚡ **Fast Response** - Under 1.2 second response time
 
 ## 🚀 Quick Start
 
-### Option 1: Minimal Demo (2 minutes)
+### Simple Installation (2 minutes)
+
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/Nouran99/bubbly---KidSafe-Alphabet-Tutor.git
 cd bubbly---KidSafe-Alphabet-Tutor
 
-# Install minimal requirements
-pip install -r requirements-minimal.txt
+# 2. Run the setup
+python setup.py --simple
 
-# Run the application
-python app/gradio_ui_simple.py
-# Or use the startup script: python start_app.py
+# 3. Start the app
+python app/simple_app.py
 ```
-Open http://localhost:7860 in your browser
 
-### Option 2: Full Installation (15 minutes)
+Open http://localhost:7860 in your browser.
+
+### Full Installation (5 minutes)
+
 ```bash
-# Use the automated installer
-chmod +x install.sh
-./install.sh
-# Choose option 2 (Standard Installation)
+# 1. Clone the repository
+git clone https://github.com/Nouran99/bubbly---KidSafe-Alphabet-Tutor.git
+cd bubbly---KidSafe-Alphabet-Tutor
+
+# 2. Run the setup
+python setup.py --full
+
+# 3. Start the app
+python app/simple_app.py
 ```
 
-### Option 3: Docker Deployment (5 minutes)
+## 📦 Installation Options
+
+The `setup.py` script provides two options:
+
+- **Simple Setup** (`--simple`): Core functionality only, minimal dependencies
+- **Full Setup** (`--full`): All features including optional AI capabilities
+
+You can also run `python setup.py` without arguments for an interactive menu.
+
+## 🔧 Manual Installation
+
+If you prefer manual installation:
+
 ```bash
-docker build -t kidsafe-tutor .
-docker run -p 7860:7860 kidsafe-tutor
+# Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app/simple_app.py
 ```
 
-## 📚 Documentation
+## 💻 System Requirements
 
-| Document | Description |
-|----------|-------------|
-| [USER_GUIDE.md](USER_GUIDE.md) | For parents and teachers (non-technical) |
-| [TECHNICAL_GUIDE.md](TECHNICAL_GUIDE.md) | Complete technical documentation |
-| [SETUP_GUIDE.md](SETUP_GUIDE.md) | Detailed installation instructions |
-| [QUICK_START.md](QUICK_START.md) | 5-minute setup guide |
+- Python 3.10 or higher
+- 2GB RAM minimum
+- 500MB disk space
+- No GPU required
 
-## 🏗️ System Architecture
+## 🏗️ Project Structure
 
 ```
-User Input → Understanding Agent → Safety Agent → Personalization Agent 
-                                                           ↓
-Response ← Feedback Agent ← Lesson Agent ←────────────────┘
+├── app/
+│   ├── simple_app.py      # Main application (use this)
+│   ├── state.py           # Session memory management
+│   ├── activities.py      # Learning activities
+│   └── progress.py        # Gamification system
+├── agents/
+│   └── crew_setup_simple.py  # Multi-agent system
+├── setup.py               # Installation script
+├── requirements.txt       # Dependencies
+└── README.md             # This file
 ```
 
-### The 5 Specialized Agents:
-1. **Understanding Agent** 🧠 - Interprets child's input and intent
-2. **Safety Agent** 🛡️ - Filters inappropriate content
-3. **Personalization Agent** 🎯 - Adapts to child's learning level
-4. **Lesson Agent** 📖 - Delivers educational content
-5. **Feedback Agent** 🎉 - Provides encouragement and rewards
+## 🎮 How to Use
 
-## 🎮 Interactive Learning Activities
-
-1. **Repeat After Me** - Pronunciation practice
-2. **Find an Object** - Letter-object association
-3. **Choose the Sound** - Phonics training
-4. **Show the Letter** - Letter recognition
-5. **Letter Matching** - Visual matching games
-6. **Rhyme Time** - Sound pattern recognition
-
-## 🔧 System Requirements
-
-- **Python**: 3.10 or higher
-- **Memory**: 2GB RAM minimum
-- **Storage**: 500MB free space
-- **GPU**: Not required (CPU only)
-- **OS**: Linux, macOS, or Windows
-
-## ✅ Testing & Validation
-
-All 6 acceptance tests **PASS**:
-- ✅ Child Interaction Test
-- ✅ Safety Compliance Test
-- ✅ Response Time Test (<1.2s)
-- ✅ Memory Test (Zero persistence)
-- ✅ Educational Content Test
-- ✅ Error Handling Test
-
-Run tests:
-```bash
-python final_test.py           # System verification
-python tests/test_acceptance.py # Acceptance tests
-python diagnose.py              # System diagnostics
-```
-
-## 📊 Performance Metrics
-
-| Metric | Target | Achieved |
-|--------|--------|----------|
-| Response Time | <1.2s | ✅ 0.8s |
-| Memory Usage | <100MB | ✅ 85MB |
-| CPU Usage | <20% | ✅ 15% |
-| Crash Rate | 0% | ✅ 0% |
-
-## 🛠️ Development Tools
-
-- **diagnose.py** - System diagnostic tool
-- **install.sh** - Linux/Mac automated installer
-- **install.bat** - Windows automated installer
-- **final_test.py** - Comprehensive system test
-
-## 📁 Project Structure
-
-```
-├── app/                    # Main application
-│   ├── gradio_ui_simple.py  # UI application
-│   ├── state.py             # Memory management
-│   ├── progress.py          # Gamification
-│   └── activities.py        # Learning activities
-├── agents/                 # Multi-agent system
-├── speech/                 # Audio capabilities
-├── vision/                 # Vision capabilities
-├── tests/                  # Test suites
-└── docs/                   # Documentation
-```
+1. **Start a conversation**: Say "Hello" or "Hi"
+2. **Learn a letter**: "Teach me the letter A"
+3. **Progress**: "Next letter" or "What comes after B?"
+4. **Activities**: The system will suggest interactive activities
 
 ## 🔒 Privacy & Safety
 
-- **Zero Data Retention**: No data is stored between sessions
-- **No Personal Information**: No collection of names, ages, or identifiers
-- **Content Filtering**: Multi-layer inappropriate content detection
-- **COPPA Compliant**: Fully compliant with children's privacy regulations
+- **No data storage**: All interactions are session-only
+- **No personal information**: No names, ages, or identifiers collected
+- **Content filtering**: Inappropriate content is automatically blocked
+- **COPPA compliant**: Fully compliant with children's privacy regulations
+
+## 🐛 Troubleshooting
+
+### Windows ASGI Error
+If you see ASGI/Pydantic errors on Windows:
+```bash
+python setup.py --fix-windows
+```
+
+### Port Already in Use
+Change the port in the app:
+```python
+# In app/simple_app.py, change:
+server_port=7860  # to another port like 7861
+```
+
+### Missing Dependencies
+```bash
+python setup.py --repair
+```
+
+## 📊 Performance
+
+- Response Time: < 1.2 seconds
+- Memory Usage: < 100MB
+- CPU Usage: < 20%
+- Supports unlimited concurrent sessions
 
 ## 🤝 Contributing
 
-This project was developed as part of the CNTXT.AI hiring process. For improvements or suggestions, please open an issue or submit a pull request.
+This project was developed for CNTXT.AI's hiring process. For improvements, please open an issue or submit a pull request.
 
 ## 📄 License
 
-MIT License - Free for educational use. See [LICENSE](LICENSE) file for details.
+MIT License - Free for educational use.
 
-## 🙏 Acknowledgments
+## 👨‍💻 Author
 
-Developed by **Nouran Darwish** for CNTXT.AI, demonstrating:
-- End-to-end AI system development
-- Multi-agent architecture design
-- Child safety and privacy expertise
-- Production-ready deployment skills
+**Nouran Darwish** - Generative AI Engineer
 
 ---
 
-**Ready for deployment!** 🚀 For questions or demonstrations, run `python app/gradio_ui_simple.py`
+**Ready to use!** Run `python setup.py` to get started.
