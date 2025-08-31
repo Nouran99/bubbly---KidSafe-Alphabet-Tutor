@@ -438,25 +438,12 @@ def create_interface():
 
 if __name__ == "__main__":
     interface = create_interface()
-    try:
-        interface.launch(
-            server_name="0.0.0.0",
-            server_port=7860,
-            share=False,
-            show_api=False,
-            inbrowser=False,
-            prevent_thread_lock=False,
-            show_error=True,
-            quiet=True
-        )
-    except ValueError:
-        # Fallback if localhost not accessible
-        interface.launch(
-            server_name="127.0.0.1",
-            server_port=7860,
-            share=False,
-            show_api=False,
-            inbrowser=False,
-            show_error=True,
-            quiet=True
-        )
+    interface.launch(
+        server_name="0.0.0.0",
+        server_port=7860,
+        share=False,
+        show_api=False,  # Disable API to prevent ASGI error
+        inbrowser=False,
+        quiet=False,
+        show_error=True
+    )

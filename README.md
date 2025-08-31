@@ -28,14 +28,10 @@ cd bubbly---KidSafe-Alphabet-Tutor
 
 # Install minimal requirements
 pip install -r requirements-minimal.txt
-# Or manually: pip install gradio numpy loguru python-dotenv
-
-# Test the setup (optional but recommended)
-python test_setup.py
 
 # Run the application
-python start_app.py
-# Or directly: python app/gradio_ui_simple.py
+python app/gradio_ui_simple.py
+# Or use the startup script: python start_app.py
 ```
 Open http://localhost:7860 in your browser
 

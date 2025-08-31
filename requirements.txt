@@ -4,9 +4,11 @@
 # ==========================================
 # CORE REQUIREMENTS (Minimal Installation)
 # ==========================================
-gradio>=4.19.2,<5.0.0
+gradio==4.19.2
+gradio_client==0.10.1
 numpy>=1.24.0
 loguru>=0.7.0,<1.0.0
+python-dotenv>=1.0.0
 
 # ==========================================
 # STANDARD REQUIREMENTS (Recommended)
