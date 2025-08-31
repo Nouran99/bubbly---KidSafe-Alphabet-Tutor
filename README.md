@@ -2,6 +2,15 @@
 
 An AI-powered educational system that teaches the alphabet to children aged 3-7 with complete COPPA compliance, zero data retention, and engaging interactive learning.
 
+## 🆕 AI-Powered Mode Available!
+
+The app now supports **real AI models** for intelligent conversation:
+- **OpenAI GPT** - Cloud-based, most intelligent
+- **Ollama** - Free, local, private
+- **Fallback** - Rule-based when AI not available
+
+See [AI Guide](docs/AI_GUIDE.md) for details.
+
 ## 🌟 Key Features
 
 ### Safety & Privacy First
@@ -30,7 +39,7 @@ An AI-powered educational system that teaches the alphabet to children aged 3-7 
 - 4GB RAM minimum
 - Internet connection for initial setup
 
-### Quick Start (Simple Mode)
+### Quick Start (Simple Mode - Rule-Based)
 ```bash
 # 1. Clone the repository
 git clone https://github.com/Nouran99/bubbly---KidSafe-Alphabet-Tutor.git
@@ -67,6 +76,19 @@ python app/main.py
 | **UI Complexity** | Simple | Full |
 | **Dependencies** | Minimal | Complete |
 | **Best For** | Quick start, testing | Production use |
+
+### AI-Enhanced Mode (Intelligent Conversation)
+```bash
+# Setup AI capabilities
+./setup_ai.sh  # Interactive setup
+
+# Or manual setup
+pip install -r requirements-ai.txt
+export AI_MODEL=ollama  # or openai
+
+# Run AI version
+python app/simple_app_ai.py
+```
 
 ### Windows Users - Special Fix
 If you encounter ASGI or Pydantic errors on Windows:
