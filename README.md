@@ -65,12 +65,21 @@ python setup_ai.py
 python app/ai_app.py
 ```
 
-### Option 3: Full Features Mode
+### Option 3: FULL AI Mode (Speech + Vision + AI)
 ```bash
-# All features including audio/video
-python setup.py --full
-python app/main.py
+# Complete implementation with all assessment requirements
+./setup_full_ai.sh  # or bash setup_full_ai.sh
+
+# Run the complete system
+python app/full_ai_app.py
 ```
+
+This includes:
+- 🎤 **Speech Recognition** - Child speaks, AI understands
+- 🔊 **Text-to-Speech** - AI responds with voice
+- 📷 **Vision/Webcam** - Detect letters and objects
+- 🧠 **Full AI Intelligence** - Natural language understanding
+- 📊 **Assessment Tracking** - Complete evaluation metrics
 
 ## 🤖 AI Model Options
 

@@ -1,0 +1,58 @@
+# Full AI-Powered Mode Requirements
+# Complete implementation with Speech, Vision, and AI
+
+# Core Dependencies
+gradio==4.19.2
+gradio_client==0.10.1
+numpy==1.26.3
+loguru==0.7.2
+python-dotenv==1.0.0
+
+# Web Framework (for Gradio)
+fastapi==0.109.2
+pydantic==2.5.3
+starlette==0.36.3
+uvicorn==0.27.1
+httpx==0.26.0
+python-multipart==0.0.6
+aiofiles==23.2.1
+
+# AI/LLM Dependencies
+langchain==0.1.0
+langchain-community==0.0.10
+openai==1.8.0
+tiktoken==0.5.2
+chromadb==0.4.22
+sentence-transformers==2.2.2
+
+# Speech Recognition & TTS
+SpeechRecognition==3.10.1
+pyttsx3==2.90
+pyaudio==0.2.13
+sounddevice==0.4.6
+soundfile==0.12.1
+librosa==0.10.1
+webrtcvad==2.0.10
+
+# Vision & OCR
+opencv-python==4.9.0.80
+pytesseract==0.3.10
+Pillow==10.2.0
+
+# Machine Learning for Vision
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.36.0
+ultralytics>=8.0.0  # For YOLO object detection
+
+# Additional AI Features
+scikit-learn==1.4.0
+scipy==1.11.0
+matplotlib==3.8.2
+
+# Utilities
+huggingface-hub==0.20.3
+typing-extensions==4.9.0
+tqdm==4.66.1
+requests==2.31.0
+pyyaml==6.0.1
