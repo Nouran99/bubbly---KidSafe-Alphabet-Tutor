@@ -172,7 +172,7 @@ pip install -r requirements-full.txt
 ## Security Notes
 
 - All packages are from PyPI official repository
-- No packages with known critical vulnerabilities (as of 2024)
+- No packages with known critical vulnerabilities (as of 2025)
 - Regular updates recommended via `pip list --outdated`
 
 ---

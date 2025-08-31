@@ -1288,4 +1288,4 @@ For questions or contributions, please refer to the contributing guidelines abov
 
 *Technical Guide v1.0 - KidSafe Alphabet Tutor*  
 *Author: Nouran Darwish*  
-*Last Updated: 2024*
+*Last Updated: 2025*
