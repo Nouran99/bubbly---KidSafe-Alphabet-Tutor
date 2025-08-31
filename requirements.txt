@@ -22,7 +22,17 @@ typing-extensions==4.9.0
 aiofiles==23.2.1
 Pillow>=10.0.0
 
+# AI/LLM Dependencies (Required for AI-powered mode)
+langchain==0.1.0
+langchain-community==0.0.10
+openai==1.8.0
+tiktoken==0.5.2
+chromadb==0.4.22
+
 # Optional AI Features (Uncomment if needed)
+# ollama==0.1.7  # For local Ollama models
+# transformers==4.36.0  # For Hugging Face models
+# torch>=2.0.0  # For local transformers
 # opencv-python==4.9.0.80
 # pytesseract==0.3.10
 # scipy==1.11.0

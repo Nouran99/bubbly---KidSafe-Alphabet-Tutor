@@ -1,0 +1,41 @@
+# AI-Enhanced Requirements for KidSafe Alphabet Tutor
+# Install with: pip install -r requirements-ai.txt
+
+# Core Requirements (from requirements.txt)
+gradio==4.19.2
+gradio_client==0.10.1
+numpy==1.26.3
+loguru==0.7.2
+python-dotenv==1.0.0
+fastapi==0.109.2
+pydantic==2.5.3
+starlette==0.36.3
+uvicorn==0.27.1
+httpx==0.26.0
+python-multipart==0.0.6
+huggingface-hub==0.20.3
+typing-extensions==4.9.0
+aiofiles==23.2.1
+Pillow>=10.0.0
+
+# AI/LLM Dependencies
+openai==1.8.0                # For OpenAI GPT models
+langchain==0.1.0             # For agent orchestration
+langchain-community==0.0.10  # Community integrations
+tiktoken==0.5.2              # Token counting for OpenAI
+
+# Vector Database (for memory)
+chromadb==0.4.22            # Vector store for embeddings
+sentence-transformers==2.2.2 # For text embeddings
+
+# Local LLM Support (Optional)
+# ollama                     # Install separately: https://ollama.ai
+# llama-cpp-python==0.2.32   # For running GGUF models locally
+
+# Enhanced NLP
+spacy==3.7.2                # Advanced NLP processing
+textblob==0.17.1            # Sentiment analysis
+
+# Caching and Performance
+redis==5.0.1                # For caching responses
+diskcache==5.6.3            # Local caching
