@@ -1,39 +1,55 @@
-# KidSafe Alphabet Tutor Requirements
-# Compatible versions that work without ASGI/Pydantic errors
+# KidSafe Alphabet Tutor - Complete Requirements
+# Full AI-Powered Mode with Speech, Vision, and Intelligence
 
-# Core Dependencies (Required)
+# ===== CORE DEPENDENCIES =====
 gradio==4.19.2
 gradio_client==0.10.1
 numpy==1.26.3
 loguru==0.7.2
 python-dotenv==1.0.0
 
-# Web Framework Dependencies (Required for Gradio)
+# ===== WEB FRAMEWORK =====
 fastapi==0.109.2
 pydantic==2.5.3
 starlette==0.36.3
 uvicorn==0.27.1
 httpx==0.26.0
 python-multipart==0.0.6
-
-# Additional Dependencies (Required)
-huggingface-hub==0.20.3
-typing-extensions==4.9.0
 aiofiles==23.2.1
-Pillow>=10.0.0
 
-# AI/LLM Dependencies (Required for AI-powered mode)
+# ===== AI/LLM COMPONENTS =====
 langchain==0.1.0
 langchain-community==0.0.10
 openai==1.8.0
 tiktoken==0.5.2
 chromadb==0.4.22
+sentence-transformers==2.2.2
 
-# Optional AI Features (Uncomment if needed)
-# ollama==0.1.7  # For local Ollama models
-# transformers==4.36.0  # For Hugging Face models
-# torch>=2.0.0  # For local transformers
-# opencv-python==4.9.0.80
-# pytesseract==0.3.10
+# ===== SPEECH COMPONENTS =====
+SpeechRecognition==3.10.1
+pyttsx3==2.90
+sounddevice==0.4.6
+soundfile==0.12.1
+librosa==0.10.1
+webrtcvad==2.0.10
+
+# ===== VISION COMPONENTS =====
+opencv-python==4.9.0.80
+pytesseract==0.3.10
+Pillow==10.2.0
+
+# ===== UTILITIES =====
+huggingface-hub==0.20.3
+typing-extensions==4.9.0
+tqdm==4.66.1
+requests==2.31.0
+pyyaml==6.0.1
+
+# ===== OPTIONAL HEAVY DEPENDENCIES =====
+# Uncomment for full ML capabilities (2GB+)
+# torch>=2.0.0
+# torchvision>=0.15.0
+# transformers>=4.36.0
+# ultralytics>=8.0.0  # YOLO for object detection
+# scikit-learn==1.4.0
 # scipy==1.11.0
-# librosa==0.10.0
