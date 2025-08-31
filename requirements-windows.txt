@@ -1,0 +1,27 @@
+# Exact versions that work on Windows without ASGI errors
+# Tested with Python 3.12
+
+# Core dependencies with exact versions
+fastapi==0.109.2
+pydantic==2.5.3
+pydantic-core==2.14.6
+starlette==0.36.3
+uvicorn==0.27.1
+anyio==4.2.0
+httpx==0.26.0
+
+# Gradio with exact compatible version
+gradio==4.19.2
+gradio_client==0.10.1
+
+# Other required packages
+numpy==1.26.3
+loguru==0.7.2
+python-dotenv==1.0.0
+python-multipart==0.0.6
+typing-extensions==4.9.0
+huggingface-hub==0.20.3
+
+# Additional dependencies
+Pillow>=10.0.0
+aiofiles==23.2.1

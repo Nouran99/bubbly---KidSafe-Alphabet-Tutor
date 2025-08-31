@@ -1,27 +1,31 @@
 # How to Run KidSafe Alphabet Tutor
 
-## For Windows Users (Your Case)
+## For Windows Users (Your Case) - ULTIMATE FIX
 
 Since you already have the project cloned at:
 `E:\My_Projects\Interviews tasks\bubbly---KidSafe-Alphabet-Tutor`
 
-### Step 1: Update Your Local Copy
+### Option 1: Use the Fixed Script (RECOMMENDED)
 ```cmd
 git pull origin main
+fix_windows.bat
+python app\simple_app.py
 ```
 
-### Step 2: Install/Update Dependencies
+### Option 2: Manual Fix
 ```cmd
-pip uninstall -y gradio gradio-client
-pip install -r requirements-minimal.txt
+REM 1. Update code
+git pull origin main
+
+REM 2. Complete reinstall with exact versions
+pip uninstall -y gradio gradio-client fastapi uvicorn pydantic starlette
+pip install -r requirements-windows.txt
+
+REM 3. Run the simplified app (no ASGI errors)
+python app\simple_app.py
 ```
 
-### Step 3: Run the Application
-```cmd
-python app\gradio_ui_simple.py
-```
-
-That's it! The app will start at http://localhost:7860
+The app will start at http://localhost:7860
 
 ## Fresh Installation (Any Platform)
 
